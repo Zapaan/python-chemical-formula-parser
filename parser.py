@@ -73,6 +73,11 @@ def parse(formula, check_balance=True):
 
 
 if __name__ == '__main__':
-    print(parse('H2O'))
-    print(parse('Mg(OH)2'))
-    print(parse('K4[ON(SO3)2]2'))
+    def pprint(s):
+        print(s, '>>>', parse(s))
+
+    pprint('H2O')  # Water
+    pprint('Mg(OH)2')  # Magnesium hydroxyde
+    pprint('K4[ON(SO3)2]2')  # Fremy salt
+    pprint('C2952H4664O832N812S8Fe4')  # Hemoglobin
+    pprint('C43(H21He43[C6Hg999]{Si2[Na[Mo1]1]}42Au3)5{{D5}}')  # Alien's Poo
